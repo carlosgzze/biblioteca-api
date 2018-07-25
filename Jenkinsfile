@@ -14,19 +14,19 @@ pipeline {
         }
         stage('DeployProd') {
 	when {
-                branch 'production'
+                branch 'martinlegaspi'
             }
 	steps {
                 echo 'Deploying production....'
             }
         }
-        stage('DeployDevelop') {
-	when {
-                branch 'develop'
-            }
-	steps {
-                echo 'Deploying develop....'
-            }
-	}
+#        stage('DeployDevelop') {
+#	when {
+#                branch 'develop'
+#            }
+#	steps {
+#                echo 'Deploying develop....'
+#            }
+#	}
     }
 }
