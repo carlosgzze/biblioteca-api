@@ -13,20 +13,9 @@ pipeline {
             }
         }
         stage('DeployProd') {
-#	when {
-#                branch 'martinlegaspi'
-#            }
-	steps {
+	    steps {
                 echo 'Deploying production....'
             }
         }
-#        stage('DeployDevelop') {
-#	when {
-#                branch 'develop'
-#            }
-#	steps {
-#                echo 'Deploying develop....'
-#            }
-#	}
     }
 }
