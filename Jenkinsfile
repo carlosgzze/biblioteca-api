@@ -13,9 +13,9 @@ pipeline {
             }
         }
         stage('DeployProd') {
-	when {
-                branch 'martinlegaspi'
-            }
+#	when {
+#                branch 'martinlegaspi'
+#            }
 	steps {
                 echo 'Deploying production....'
             }
